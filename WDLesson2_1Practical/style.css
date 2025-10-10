@@ -13,7 +13,7 @@ h3 {color:blue;}
 /* Challenge 2: Change the size for the font for all headings size 1 to 60pt */
 h1 {size:60pt;}      
 /* Challenge 3: Change the style of the font for all spans to italic */
-spans {font-style:italic;}
+span {font-style:italic;}
 /* Challenge 4: Change the family of font being used for all paragraphs to "Arial" */
 p {font-family:Arial;}
 /* Challenge 5: Change the family of font being used for all lists to "Comic Sans MS".  What element creates a list? */
