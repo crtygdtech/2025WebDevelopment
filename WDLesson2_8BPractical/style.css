@@ -2,11 +2,34 @@
    Hint: Remember all the fundamental CSS rules when working with flexboxes */
 .container{
    display:flex;
+   font-family:Arial;
 }
 nav a{
+   background-color:green;
    flex:1;
+   color:white
 }
 .center{
    justify-content:center;
    align-items:center;
+}
+#banner{
+   max-width:200px;
+}
+#main{
+   flex:1;
+   text-align:center;
+}
+#links a{
+   flex:1;
+   text-decoration:none;
+   color:black;
+}
+#sample{
+   flex:1;
+   text-align:center;
+}
+#footer{
+   background-color:green;
+   color:white;
 }
