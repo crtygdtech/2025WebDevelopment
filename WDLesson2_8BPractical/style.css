@@ -13,9 +13,6 @@ nav a{
    justify-content:center;
    align-items:center;
 }
-#banner{
-   max-width:200px;
-}
 #main{
    flex:1;
    text-align:center;
