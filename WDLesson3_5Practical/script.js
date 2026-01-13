@@ -4,14 +4,17 @@
       3) Display the results in the appropriate element
 */
 function recArea(){
-      let length = document.getElementById("length");
-      let width = document.getElementById("width");
-      let answer = parseInt(length.value)*parseInt(width.value);
-      Output.innerHTML = answer
+      let length1 = document.getElementById("length1");
+      let width1 = document.getElementById("width1");
+      let answer = parseFloat(length1.value) * parseFloat(width1.value);
+      output.innerHTML = answer
 }
 
 function recPerimeter(){
-
+      let length2 = document.getElementById("length2");
+      let width2 = document.getElementById("width2");
+      let answer = 2*(parseInt(length2.value) + parseInt(width2.value));
+      output.innerHTML = answer
 }
 
 
