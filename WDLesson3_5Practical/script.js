@@ -26,11 +26,15 @@ function recPerimeter(){
 let pi = 3.1415926;
 
 function cirArea(){
-
+      let radius1 = document.getElementById("radius1");
+      let answer = (pi.value) * parseFloat(radius1.value)^2;
+      output.innerHTML = answer
 }
 
 function cirPerimeter(){
-
+      let radius2 = document.getElementById("radius2");
+      let answer = 2(pi.value) * parseFloat(radius2.value);
+      output.innerHTML = answer
 }
 
 /* Challenge Bonus: Complete the area and perimeter functions below for the triangle.  Guidelines,
