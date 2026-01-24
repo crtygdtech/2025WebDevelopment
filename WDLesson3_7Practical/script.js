@@ -18,6 +18,14 @@ function distance(){
       2) Perform the necessary calculations
       3) Display the results in the appropriate element
 */
-
+function compound_interest(){
+      let p = parseFloat(document.getElementById("p").value);
+      let r = parseFloat(document.getElementById("r").value);
+      let n = parseFloat(document.getElementById("n").value);
+      let t = parseFloat(document.getElementById("t").value);
+      let output = document.getElementById("output");
+      let a = p(1+r/n)**n(t);
+      output.innerHTML = "Final amount is" + a;
+}
 
 
