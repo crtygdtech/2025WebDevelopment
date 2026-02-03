@@ -18,6 +18,9 @@
             if (lang == "Chinese"){
               house="家";
             }
+            if (lang == "Korean"){
+              house="집"
+            }
         // Challenge 11: Display an appropriate message stating "house" in the specified language is given translation.       
             output.innerHTML=`In ${lang} house is ${house}`;
 
@@ -47,7 +50,8 @@
           <option disabled>Select language</option>
           <option>Spanish</option>
           <!-- Challenge 8: Add two more language as shown above -->
-           
+          <option>Chinese</option>
+          <option>Korean</option>
         </select>
         <input type="button" onclick="translateHouse()" value="Translate">
         <div id="output"></div>        
