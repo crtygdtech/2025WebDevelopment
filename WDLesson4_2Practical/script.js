@@ -13,7 +13,21 @@ function name(){
 */
 
 /* Challenge 2:  Create the function for Challenge 1 scenario */
+function Area(){
+  let l = parseInt(document.getElementById("length").value);
+  let w = parseInt(document.getElementById("width").value);
+  let output = document.getElementById("output");
+  let a = l * w;
+  let message = "";
 
+  if (l <= 0 || w <= 0){
+    message ="Inappropriate measurement";
+  }
+  else{
+    message = a;
+  }
+  output.innerHTML = `The area of the rectangle is ${a}`;
+}
 
 
 /* Challenge 3:  Complete the function for Pets Challenge on pets.html.  
@@ -21,5 +35,5 @@ function name(){
 2) You will need to write HTML as part of the output.  
    For example, output.innerHTML = `<input src="pic.png">` would place the image in the <div>*/
 function pet(){
-
+  let
 }
