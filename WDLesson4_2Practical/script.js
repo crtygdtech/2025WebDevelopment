@@ -26,7 +26,7 @@ function Area(){
   else{
     message = a;
   }
-  output.innerHTML = `The area of the rectangle is ${a}`;
+  output.innerHTML = message;
 }
 
 
@@ -35,5 +35,28 @@ function Area(){
 2) You will need to write HTML as part of the output.  
    For example, output.innerHTML = `<input src="pic.png">` would place the image in the <div>*/
 function pet(){
-  let
+  let animal = document.getElementById("animal").value;
+  let emotion = document.getElementById("emotion").value;
+  let output = document.getElementById("output");
+  let picture = "";
+  
+  if (animal == "Bear" && emotion == "Sad"){
+    picture = "sadBear.jpg";
+  }
+  if (animal == "Cat" && emotion == "Sad"){
+    picture = "sadCat.jpg";
+  }
+  if (animal == "Dog" && emotion == "Sad"){
+    picture = "sadDog.jpg";
+  }
+  if (animal == "Bear" && emotion == "Funny"){
+    picture = "funnyBear.jpg";
+  }
+  if (animal == "Cat" && emotion == "Funny"){
+    picture = "funnyCat.jpg";
+  }
+  if (animal == "Dog" && emotion == "Funny"){
+    picture = "funnyDog.jpg";
+  }
+  output.innerHTML=`<img src= ${picture}>`;
 }
