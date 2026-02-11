@@ -19,19 +19,24 @@ function bmi(){
        let output = document.getElementById("output");
        let bmi = w/(h**2);
        let status = "";
+       let filename = "";
 
-       if (bmi > 18,5 < 24,9){
-              status = "healthyweight.png";
+       if (bmi >= 18.5 && bmi <= 24.9){
+              status = "Healthy weight";
+              filename = "healthyweight.png";
        }
-       else if (bmi < 18,5){
-              status = "underweight.png";
+       else if (bmi < 18.5){
+              status = "Under weight";
+              filename = "underweight.png";
        }
-       else if (bmi > 25 < 29,9){
-              status = "overweight.png";
+       else if (bmi >= 25 && bmi <= 29.9){
+              status = "Over weight";
+              filename = "overweight.png";
        }
-       else if (bmi > 30 < 34,9){
-              status = "obeseweight.png";
+       else if (bmi >= 30 && bmi <= 34.9){
+              status = "Obese weight";
+              filename = "obeseweight.png";
        }
-       output.innerHTML = `<img src = ${status}>`;
+       output.innerHTML = `Your BMI is ${bmi} <img src = ${filename}>`;
 }
        
