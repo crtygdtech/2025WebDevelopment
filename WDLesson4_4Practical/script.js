@@ -25,7 +25,7 @@ function generateProblem(){
        4) Display msg in the output
 */
 function checkProblem(){
-       let response = document.getElementById("response");
+       let response = parseInt(document.getElementById("response").value);
        let output = document.getElementById("output");
        let msg = "";
        filename = "";
