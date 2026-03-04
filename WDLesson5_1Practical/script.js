@@ -12,3 +12,11 @@ Year 3: $xxxxxx
 ...
 Year N: $xxxxxx
 */
+function compoundInterest(){
+    let p = parseFloat(document.getElementById("p").value);
+    let r = parseFloat(document.getElementById("r").value);
+    let n = parseFloat(document.getElementById("n").value);
+    let t = parseFloat(document.getElementById("t").value);
+    let output = document.getElementById("output");
+    let CI = p*(1+(r/n))**n*t;
+}
