@@ -16,7 +16,11 @@ Now that you have the template, use a for loop to produce all five pizza cards.
 
 //init() function is called when the page loads in index.html
 function init(){
-  
+   let output = document.getElementById("output");
+   let build = "";
+   build += `<div>`;
+   build += 
+
 
 }
 
