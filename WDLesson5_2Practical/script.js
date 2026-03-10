@@ -21,8 +21,8 @@ function init(){
    for (let i = 1; i <= 5; i += 1){
       let n = Math.floor(Math.random() * 4 + 5);
       build += `<div>`;
-      build += `     <img src="images/title${1}.png">`;
-      build += `     <img src="images/pizza${1}.jpg">`;
+      build += `     <img src="images/title${i}.png">`;
+      build += `     <img src="images/pizza${i}.jpg">`;
       build += `     <span>$${n}</span>`;
       build += `</div>`;
    }
