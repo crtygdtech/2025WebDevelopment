@@ -24,6 +24,8 @@ function init(){
       build += `     <img src="images/title${i}.png">`;
       build += `     <img src="images/pizza${i}.jpg">`;
       build += `     <span>$${n}</span>`;
+   //   build += `     <input="text" placeholder="Enter Quantity">`;
+   //   build += `     <input="button" value="Buy">`;
       build += `</div>`;
    }
 
