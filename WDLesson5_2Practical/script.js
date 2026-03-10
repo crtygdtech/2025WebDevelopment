@@ -18,11 +18,13 @@ Now that you have the template, use a for loop to produce all five pizza cards.
 function init(){
    let output = document.getElementById("output");
    let build = "";
-   for (let i = 0; i < 5; i += 1){
+   for (let i = 1; i <= 5; i += 1){
+      let n = Math.floor(Math.random() * 4 + 5);
       build += `<div>`;
-      build += `  <h3 id="title">`;
-      build += `     <img src="images/title1.png">`;
-      build += `     <img src="images/pizza1.jpg">`;
+      build += `     <img src="images/title${1}.png">`;
+      build += `     <img src="images/pizza${1}.jpg">`;
+      build += `     <span>$${n}</span>`;
+      build += `</div>`;
    }
 
    output.innerHTML = build;
