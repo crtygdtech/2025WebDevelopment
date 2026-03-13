@@ -11,6 +11,16 @@
 */
 
 function balance(){
+        let output = document.getElementById("output");
+        let p = parseFloat(document.getElementById("p"));
+        let r = parseFloat(document.getElementById("r"));
+        let t = parseFloat(document.getElementById("t"));
+        let n = 1;
+        let a = p * (1 + r/n)**(n*t);
+        
+        let build = "<table>";
+        for (let )
+
 
 
 }
