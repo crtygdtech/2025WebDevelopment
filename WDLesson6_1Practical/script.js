@@ -5,14 +5,14 @@
 //Challenge 2: Add appropriate prices for each food in their corresponding array.
 //Challenge 3: Add appropriate titles for each food in their corresponding array.  Use the image names as a hint for the food title.
 let meat_titles = ["Beeftips", "Brisket", "Ribeye", "Steak"];
-let meats = ["images/beeftips.jpg","images/brisket"];
-let meat_prices = [];
-let seafood_titles = [];
-let seafood = [];
-let seafood_prices = [];
-let dessert_titles = [];
-let dessert = [];
-let dessert_prices = [];
+let meats = ["beeftips.jpg","brisket.jpg", "ribeye.jpg", "steak.jpg"];
+let meat_prices = [21.99, 22.40, 18.00, 23.25];
+let seafood_titles = ["Clams", "Crabs", "Lobster", "Scallops", "Shrimp", "Tuna"];
+let seafood = ["clams.jpg","crabs.jpg","lobster.png","scallops.jpg","shrimp.jpg","tuna.jpg"];
+let seafood_prices = [18.00, 18.99, 20.23, 19.25, 16.00, 14.50];
+let dessert_titles = ["Flan", "Oreocup", "Passionberry"];
+let dessert = ["flan.jpg","oreocup.jpg", "passionberry.jpeg"];
+let dessert_prices = [15.00, 15.99, 18.35];
 
 function init(){
   //Each food has its own output container
@@ -21,7 +21,14 @@ function init(){
   let d = document.getElementById("desserts");
   let build = ``;
   //Challenge 4:  Build cards for the meats. Place the build in the meat container. 
-
+  for(let i = 0; i < meats.length; i += 1){
+    build += `<div class="card">`;
+    build += `  <h2> ${meat_titles[i]} </h2>`;
+    build += `  <img src="images/${meats[i]}">`;
+    build += `  <span> ${meat_prices[i]} </span>`;
+    build += `</div>`;
+  }
+  m.innerHTML = build;
   //Challenge 5:  Build cards for the seafoods. Place the build in the seafood container.
 
   //Challenge 6:  Build cards for the desserts. Place the build in the dessert container.
