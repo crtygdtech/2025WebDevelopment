@@ -17,11 +17,11 @@ let dessert_prices = [15.00, 15.99, 18.35];
 function init(){
   //Each food has its own output container
   let m = document.getElementById("meats");
-  let s = document.getElementById("seafoods");
-  let d = document.getElementById("desserts");
-  let build = ``;
+  let s = document.getElementById("seafood");
+  let d = document.getElementById("dessert");
+  let build = " ";
   //Challenge 4:  Build cards for the meats. Place the build in the meat container. 
-  for(let i = 0; i < meats.length; i += 1){
+  for(let i = 0; i < meat.length; i += 1){
     build += `<div class="card">`;
     build += `  <h2> ${meat_titles[i]} </h2>`;
     build += `  <img src="images/${meats[i]}">`;
@@ -30,9 +30,23 @@ function init(){
   }
   m.innerHTML = build;
   //Challenge 5:  Build cards for the seafoods. Place the build in the seafood container.
-
+   for(let i = 0; i < seafood.length; i += 1){
+    build += `<div class="card">`;
+    build += `  <h2> ${seafood_titles[i]} </h2>`;
+    build += `  <img src="images/${seafood[i]}">`;
+    build += `  <span> ${seafood_prices[i]} </span>`;
+    build += `</div>`;
+  }
+  s.innerHTML = build;
   //Challenge 6:  Build cards for the desserts. Place the build in the dessert container.
-
+  for(let i = 0; i < dessert.length; i += 1){
+    build += `<div class="card">`;
+    build += `  <h2> ${dessert_titles[i]} </h2>`;
+    build += `  <img src="images/${dessert[i]}">`;
+    build += `  <span> ${dessert_prices[i]} </span>`;
+    build += `</div>`;
+  }
+  d.innerHTML = build;
   /*Notes for Challenges 4 through 6:
       1) Each challenge requires its own for loop to build the output.
       2) You can reuse the build variable as long as you set it back to `` before each loop.
