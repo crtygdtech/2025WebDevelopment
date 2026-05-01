@@ -76,3 +76,6 @@ nav a:hover{
   height:150px;
   object-fit:contain;
 }
+#subanner a h2{
+  text-align:center;
+}
