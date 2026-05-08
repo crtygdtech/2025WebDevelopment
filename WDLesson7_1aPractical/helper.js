@@ -20,7 +20,9 @@ function celsius( temp ){
 /* ==========================================================*/
 
 //Challenge 3: Create a function bmi that accepts a person's height and weight and then returns the person's bmi.Hint:  Look up the formula. You have done this in past activities.
-
+function bmi(weight){
+  return weight/ (height)**2;
+}
 
 //Challenge 5: Create a function bmiCategory that accepts a person's bmi and returns their category as either "under weight", "normal weight", "over weight" or "obese".  Hint: This requires decision.  You have done this in past activities.
 
