@@ -96,7 +96,7 @@ function filterByCrash_time(){
                 <p>Contributing factor1: ${complaint.contributing_factor_vehicle_1}</p>
                 <p>Contributing factor2: ${complaint.contributing_factor_vehicle_2}</p>
                 <p>Contributing factor3: ${complaint.contributing_factor_vehicle_3}</p>
-              </div>`
+              </div>`;
               
       ct += 1;
     }
@@ -123,7 +123,7 @@ function filterByBorough(){
                 <p>Contributing factor1: ${complaint.contributing_factor_vehicle_1}</p>
                 <p>Contributing factor2: ${complaint.contributing_factor_vehicle_2}</p>
                 <p>Contributing factor3: ${complaint.contributing_factor_vehicle_3}</p>
-              </div>`
+              </div>`;
               
       ct += 1;
     }
@@ -150,7 +150,7 @@ function filterByContribute_fator1(){
                 <p>Contributing factor1: ${complaint.contributing_factor_vehicle_1}</p>
                 <p>Contributing factor2: ${complaint.contributing_factor_vehicle_2}</p>
                 <p>Contributing factor3: ${complaint.contributing_factor_vehicle_3}</p>
-              </div>`
+              </div>`;
               
       ct += 1;
     }
@@ -177,7 +177,7 @@ function filterByContribute_fator2(){
                 <p>Contributing factor1: ${complaint.contributing_factor_vehicle_1}</p>
                 <p>Contributing factor2: ${complaint.contributing_factor_vehicle_2}</p>
                 <p>Contributing factor3: ${complaint.contributing_factor_vehicle_3}</p>
-              </div>`
+              </div>`;
               
       ct += 1;
     }
@@ -203,7 +203,7 @@ function filterByContribute_fator3(){
                 <p>Contributing factor1: ${complaint.contributing_factor_vehicle_1}</p>
                 <p>Contributing factor2: ${complaint.contributing_factor_vehicle_2}</p>
                 <p>Contributing factor3: ${complaint.contributing_factor_vehicle_3}</p>
-              </div>`
+              </div>`;
               
       ct += 1;
     }

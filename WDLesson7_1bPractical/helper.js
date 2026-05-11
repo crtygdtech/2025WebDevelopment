@@ -4,15 +4,15 @@ function get(id){
 }
 
 //Challeng 1: Create a function card that accepts a JSON of a 311 complaint, generates and returns an appropriate card for the complaint
-function card(complaint){
+function card(info){
   let build="";
-  build += `<div class="fitted card">:
-                  <h3>${complaint.complaint_type}</h3>
-                  <p>${complaint.borough}</p>
-                  <p>${complaint.incident_zip}</p>
-                  <p>${complaint.descriptor}</p>
+  build += `<div class="card">:
+                  <h2>${info.plate}</h3>
+                  <h2>${info.state}</p>
+                  <h2>${info.license_type}</p>
+                  <p>${info.violation}</p>
   </div>
-  `
+  `;
 }
 return build;
 
