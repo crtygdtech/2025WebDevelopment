@@ -9,8 +9,8 @@ async function init(){
   let cards_output = get("cards_output");
   let build = "";
   for(let i = 0; i < data.length; i+=1) {
-    let complaint = data[i];
-    build += card(complaint);
+    let info = data[i];
+    build += card(info);
   }
   cards_output.innerHTML = build;
 }
